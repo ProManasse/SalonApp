@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BarberBookApp</string>
+    <string name="title_activity_inside_salon">Map</string>
+    <string name="shared_preferences">com.example.barberbooker_shared_preferences</string>
+    <string name="login_preferences">com.example.barberbooker_login_preferences</string>
+    <string name="user_name">musoni@barberbooker.rw</string>
+    <string name="password">Jesus1king</string>
+</resources>

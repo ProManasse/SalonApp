@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Admin Login"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold|italic"
+    android:id="@+id/loginTt"
+    android:textSize="30sp"
+    android:layout_marginBottom="50dp"
+    />
+    <EditText
+        android:id="@+id/editTPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginTt"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="phone number" />
+
+    <EditText
+        android:id="@+id/editTPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_below="@+id/editTPhone"
+        android:inputType="textPassword"
+        android:hint="password" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTPassword"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_back"
+        android:text="Login" />
+</RelativeLayout>

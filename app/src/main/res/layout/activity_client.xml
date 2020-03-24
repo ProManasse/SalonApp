@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book"
+    android:gravity="center"
+    tools:context=".ClientActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register to Book"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic|bold"
+        android:id="@+id/clientTt"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txtInform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_below="@+id/clientTt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Please enter your name to book this barber"/>
+    <EditText
+        android:id="@+id/cfname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="First Name"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/txtInform"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/clname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Last Name"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:layout_below="@+id/cfname"/>
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="Book"
+        android:textColor="#FFF"
+        android:background="@drawable/button_back"
+        android:layout_below="@+id/clname"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp" />
+</RelativeLayout>

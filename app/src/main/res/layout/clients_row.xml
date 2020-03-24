@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/imagev"
+            android:src="@drawable/client_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/imagev"
+            android:text="NAME"
+            android:id="@+id/txtName"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:id="@+id/txtDate"
+            android:layout_below="@+id/txtName"
+            android:layout_toRightOf="@+id/imagev"
+            android:text="Date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:id="@+id/txtStatus"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"
+            android:layout_marginRight="30dp"
+            android:text="Status"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:id="@+id/txtTime"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/txtStatus"
+            android:text="Time"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
